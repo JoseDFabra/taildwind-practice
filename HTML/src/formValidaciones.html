@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./output.css">
+  <title>form y validaciones</title>
+</head>
+<body>
+  <form class="bg-slate-300 w-80 m-auto flex items-center justify-center flex-col p-11 rounded-lg shadow-md ">
+
+
+    <input placeholder="Nombre" autocomplete="off" type="text" class="p-4 mt-6 rounded">
+
+    
+    <input placeholder="Correo" autocomplete="off" type="email" class="p-4 mt-6 rounded focus:outline-none focus:ring-2 focus:ring-green-500 invalid:focus:ring-red-600 peer">
+    <span class="text-red-600 hidden peer-invalid:block" >El correo es invalido***</span>
+    
+    <input placeholder="edad" value="25" disabled autocomplete="off" type="number" class="p-4 mt-6 rounded disabled:bg-red-500 disabled:text-white">
+
+
+    <input type="submit" value="Ingresar" class="bg-orange-400 hover:bg-orange-500 mt-6 rounded cursor-pointer p-4" >
+
+  </form>
+</body>
+</html>
